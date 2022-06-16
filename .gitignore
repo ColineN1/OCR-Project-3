@@ -1,0 +1,7 @@
+# TODO : ignorer les fichiers .DS_STORE
+# TODO : ignorer le dossier project
+
+.DS_STORE
+
+# Folders to ignore
+/project/
