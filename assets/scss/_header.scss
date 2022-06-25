@@ -1,5 +1,14 @@
 //Header 
-
-.logo{
-    width: 100px;
+header {
+    display: flex;
+    justify-content: center;
+    & .logo {
+        width: 10em;
+        margin: $logo_margin;
+    }
+    & i {
+            position: absolute;
+            left: 5%;
+            top: 28px;
+    }
 }

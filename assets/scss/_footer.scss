@@ -1,0 +1,16 @@
+footer{
+    background-color: rgb(48, 47, 47);
+    padding: $general_margin;
+
+    & a{
+    text-decoration: none;
+    color: white;
+    font-size: smaller;
+}
+
+& .logo{
+    width: 5em;
+    filter: brightness(100);
+    margin: $logo_margin;
+}
+}

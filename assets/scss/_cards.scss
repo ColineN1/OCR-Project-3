@@ -1,0 +1,60 @@
+//cards
+section{
+    background-color: $background-grey;
+    padding:$general_margin;
+}
+article{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: $semi-round;
+    box-shadow: $box-shadow1;
+}
+
+.card__img {
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    border-radius: $top-round;
+}
+.card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.new_label{
+    position: absolute;
+    right: 15px;
+    top:15px;
+    padding: 6px 12px;
+    font-size: 0.8em;
+    background-color: $bluegreen;
+    color:$green; 
+    border-radius: $light-round;
+    font-weight: bold;
+
+}
+.card__description{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    & h3{
+    padding: 15px 0 0 10px;
+    }
+    & p{
+        padding-left: 10px;
+    }
+    &__heart{
+        display: flex;
+        position: absolute;
+        right:20px;
+        top:160px;
+        
+    }
+}
+

@@ -1,0 +1,9 @@
+{
+    "name": "projet3",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "sass": "sass ./assets/scss/main.scss:./assets/scss/main.css",
+        "sass-watch": "sass --watch ./assets/scss/main.scss:./assets/scss/main.css"
+    }
+}

@@ -1,0 +1,44 @@
+//aside - Concept of the website
+
+.fonction__step {
+    padding: 20px 0;
+    font-size: small;
+    font-weight: bold;
+    margin: $button_margin;
+    margin-left: 10px;
+    border-radius: $semi-round;
+    box-shadow: $box-shadow1;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.fonction-icon {
+    padding: 0 20px;
+    position: absolute;
+    left: 50px;
+}
+
+.--purple {
+    background-color: $clearpurple;
+}
+
+.number {
+    position: absolute;
+    left: 20px;
+    padding: 2px 6px;
+    background-color: $purple;
+    border-radius: 50%;
+    color: white;
+}
+
+.grey {
+    color: $background-grey;
+}
+
+.purple {
+    color: $purple;
+}
+
+aside {
+    margin: $general_margin;
+}
