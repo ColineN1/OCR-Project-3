@@ -1,25 +1,46 @@
 //aside - Concept of the website
-
+.fonction{
+    @media screen and (min-device-width: map-get($breakpoints, tablet)) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+      }
+}
+.fonction a{
+    @media screen and (min-device-width: map-get($breakpoints, desktop)) {
+        width: 22%;
+    }
+}
 .fonction__step {
-    padding: 20px 0;
+    padding: 20px 10px 20px 0;
     font-size: small;
     font-weight: bold;
     margin: $button_margin;
     margin-left: 10px;
     border-radius: $semi-round;
-    box-shadow: $box-shadow1;
+    box-shadow: $box-shadow;
     display: flex;
     justify-content: center;
     align-items: baseline;
+    &:hover {
+    background-color: $clearpurple;
+    box-shadow: $box-shadow2;
+    & > .fonction-icon {
+        color: $purple;
+    }
+    }
+    
 }
 .fonction-icon {
     padding: 0 20px;
     position: absolute;
     left: 50px;
-}
-
-.--purple {
-    background-color: $clearpurple;
+    color: grey;
+    @media screen and (min-device-width: map-get($breakpoints, tablet)) {
+        position:relative;
+        left: 0;
+      }
 }
 
 .number {
@@ -29,14 +50,10 @@
     background-color: $purple;
     border-radius: 50%;
     color: white;
-}
-
-.grey {
-    color: $background-grey;
-}
-
-.purple {
-    color: $purple;
+    @media screen and (min-device-width: map-get($breakpoints, tablet)) {
+        position:relative;
+        left: 0;
+      }
 }
 
 aside {

@@ -3,6 +3,15 @@ section{
     background-color: $background-grey;
     padding:$general_margin;
 }
+.restaurant a {
+    @media screen and (min-device-width: map-get($breakpoints, tablet)) {
+         width: 40%;
+    }
+    @media screen and (min-device-width: map-get($breakpoints, desktop)) {
+        width: 20%;
+    }
+}
+
 article{
     position: relative;
     display: flex;
@@ -11,8 +20,9 @@ article{
     margin: 20px 0;
     background-color: white;
     border-radius: $semi-round;
-    box-shadow: $box-shadow1;
+    box-shadow: $box-shadow;
 }
+
 
 .card__img {
     height: 160px;
@@ -54,7 +64,14 @@ article{
         position: absolute;
         right:20px;
         top:160px;
-        
+        cursor: pointer;
     }
 }
-
+.restaurant{
+    @media screen and (min-device-width: map-get($breakpoints, tablet)) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+      }
+}

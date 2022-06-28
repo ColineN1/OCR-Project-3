@@ -3,16 +3,20 @@
 
 <head>
     <title>ohmyfood</title>
-    <link rel="stylesheet" type="text/css" href="assets/scss/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/f47f0d0af0.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/scss/main.css">
+    <script src="https://kit.fontawesome.com/f47f0d0af0.js" crossorigin="anonymous"></script>
 </head>
 
+
 <body>
+    <div class="loading">
+        <i class="fa-solid fa-spinner fa-5x"></i>
+    </div>
     <header>
-        <img class="logo" src="assets/logo/ohmyfood.png" alt="Logo Oh my food" />
+        <img class="logo" src="./assets/logo/ohmyfood.png" alt="Logo Oh my food" />
     </header>
     <nav>
         <div class="nav__serachbar">
@@ -31,83 +35,91 @@
     </nav>
     <aside>
         <h2>Fonctionnement</h2>
-        <div class="fonction__step">
-            <span class=number>1</span><i class="fa-solid fa-mobile-screen fa-fw fonction-icon grey"></i> Choissisez un restaurant
-        </div>
-        <div class="fonction__step">
-            <span class=number>2</span><i class="fa-solid fa-list fa-fw fonction-icon grey"></i> Composez votre menu
-        </div>
-        <div class="fonction__step --purple">
-            <span class=number>3</span><i class="fa-solid fa-store fa-fw fonction-icon purple"></i> Dégustez au restaurant
+        <div class="fonction">
+            <a href="#">
+                <div class="fonction__step">
+                    <span class=number>1</span><i class="fa-solid fa-mobile-screen fa-fw fonction-icon"></i> Choissisez un restaurant
+                </div>
+            </a>
+            <a href="#">
+                <div class="fonction__step">
+                    <span class=number>2</span><i class="fa-solid fa-list fa-fw fonction-icon"></i> Composez votre menu
+                </div>
+            </a>
+            <a href="#">
+                <div class="fonction__step">
+                    <span class=number>3</span><i class="fa-solid fa-store fa-fw fonction-icon"></i> Dégustez au restaurant
+                </div>
+            </a>
         </div>
     </aside>
-    
+
     <section>
         <h2>Restaurants</h2>
-        <a href="#">
-            <article>
-                <div class="card__img">
-                    <img src="assets/restaurants/palette.jpg" alt="La palette du goût">
-                    <div class="new_label">Nouveau</div>
-                </div>
-                <div class="card__description">
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                    <div class="card__description__heart">
-                        <span class="fa-regular fa-heart fa-xl"></span>
+        <div class="restaurant">
+            <a href="./lapalettedugout.html">
+                <article>
+                    <div class="card__img">
+                        <img src="./assets/restaurants/palette.jpg" alt="La palette du goût">
+                        <div class="new_label">Nouveau</div>
                     </div>
-                </div>
-            </article>
-        </a>
-        <a href="#">
-        <article>
-            <div class="card__img">
-                <img src="assets/restaurants/note.jpg" alt="La note enchantée">
-                <div class="new_label">Nouveau</div>
-            </div>
-            <div class="card__description">
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
-                <div class="card__description__heart">
-                    <span class="fa-regular fa-heart fa-xl"></span>
-                </div>
-            </div>
-        </article>
-    </a>
-    <a href="#">
-        <article>
-            <div class="card__img">
-                <img src="assets/restaurants/francaise.jpg" alt="A la francaise">
-                <div class="new_label">Nouveau</div>
-            </div>
-            <div class="card__description">
-                <h3>A la Francaise</h3>
-                <p>Cité rouge</p>
-                <div class="card__description__heart">
-                    <span class="fa-regular fa-heart fa-xl"></span>
-                </div>
-            </div>
-        </article>
-    </a>
-    <a href="#">
-        <article>
-            <div class="card__img">
-                <img src="assets/restaurants/sens.jpg" alt="Le délice des sens">
-                <div class="new_label">Nouveau</div>
-            </div>
-            <div class="card__description">
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
-                <div class="card__description__heart">
-                    <span class="fa-regular fa-heart fa-xl"></span>
-                </div>
-            </div>
-        </article>
-    </a>
+                    <div class="card__description">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                        <div class="card__description__heart">
+                            <span class="fa-regular fa-heart"></span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="#">
+                <article>
+                    <div class="card__img">
+                        <img src="./assets/restaurants/note.jpg" alt="La note enchantée">
+                        <div class="new_label">Nouveau</div>
+                    </div>
+                    <div class="card__description">
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                        <div class="card__description__heart">
+                            <span class="fa-regular fa-heart"></span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="#">
+                <article>
+                    <div class="card__img">
+                        <img src="./assets/restaurants/francaise.jpg" alt="A la francaise">
+                    </div>
+                    <div class="card__description">
+                        <h3>A la Francaise</h3>
+                        <p>Cité rouge</p>
+                        <div class="card__description__heart">
+                            <span class="fa-regular fa-heart"></span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="#">
+                <article>
+                    <div class="card__img">
+                        <img src="./assets/restaurants/sens.jpg" alt="Le délice des sens">
+                    </div>
+                    <div class="card__description">
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                        <div class="card__description__heart">
+                            <span class="fa-regular fa-heart fa-xl"></span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+        </div>
     </section>
-    
+
     <footer>
-        <img class=logo src="assets/logo/ohmyfood.png" alt="Logo Oh my food" />
+        <img class=logo src="./assets/logo/ohmyfood.png" alt="Logo Oh my food" />
         <p><a href="#"><i class="fa-solid fa-utensils fa-sm fa-fw"></i> Proposer un nouveau restaurant</a></p>
         <p><a href="#"><i class="fa-solid fa-handshake-angle fa-sm fa-fw"></i> Devenir partenaire</a></p>
         <p><a href="#">Mentions légales</a></p>

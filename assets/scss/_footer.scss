@@ -1,16 +1,19 @@
 footer{
-    background-color: rgb(48, 47, 47);
+    background-color: $background-footer;
     padding: $general_margin;
 
     & a{
     text-decoration: none;
     color: white;
     font-size: smaller;
+    }
+    & p{
+    margin:7px 0;
 }
 
 & .logo{
     width: 5em;
     filter: brightness(100);
-    margin: $logo_margin;
+    margin: 25px 0 5px 0;
 }
 }
