@@ -4,10 +4,10 @@ section{
     padding:$general_margin;
 }
 .restaurant a {
-    @media screen and (min-device-width: map-get($breakpoints, tablet)) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
          width: 40%;
     }
-    @media screen and (min-device-width: map-get($breakpoints, desktop)) {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
         width: 20%;
     }
 }
@@ -21,6 +21,9 @@ article{
     background-color: white;
     border-radius: $semi-round;
     box-shadow: $box-shadow;
+    &:hover {
+        box-shadow: $box-shadow2;
+    }
 }
 
 
@@ -68,7 +71,7 @@ article{
     }
 }
 .restaurant{
-    @media screen and (min-device-width: map-get($breakpoints, tablet)) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         flex-direction: row;
         flex-wrap: wrap;
         display: flex;

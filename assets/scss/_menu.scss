@@ -28,7 +28,7 @@
     }
 }
 .menu__under{
-    @media screen and (min-device-width: map-get($breakpoints, tablet)) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         flex-direction: row;
         flex-wrap: wrap;
         display: flex;
@@ -53,6 +53,7 @@
             width: 28%;
           }
         &:hover {
+            box-shadow: $box-shadow2;
             & > .menu__item__check {
                 width: 64px;
                 animation-fill-mode: forwards;

@@ -54,4 +54,10 @@ $button_margin: 20px 0;
     $possibility: ("01":0.2s,"02":0.4s,"03":0.6s,"04":0.8s,"05":1s,"06":1.2s,"07":1.4s,"08":1.6s,"09":1.8s,"10":2s,"11":2.2s,"12":2.4s,"13":2.6s,"14":2.8s,"15":3s);
 
 //Breakpoints
-$breakpoints: (tablet: 600px, desktop: 1150px);
+$breakpoints: ("tablet": 600px, "desktop": 1150px);
+
+h2 {
+    @media screen and (min-width: map-get($breakpoints, "tablet")) {
+        text-align: center;
+      }
+    }
