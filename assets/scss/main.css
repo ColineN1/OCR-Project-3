@@ -320,8 +320,9 @@ nav {
 }
 
 .fonction__step {
-  padding: 20px 10px 20px 0;
-  font-size: small;
+  padding: 22px 10px 16px 0;
+  height: 25px;
+  font-size: 0.9em;
   font-weight: bold;
   margin: 20px 0;
   margin-left: 10px;
@@ -355,7 +356,8 @@ nav {
 .number {
   position: absolute;
   left: 20px;
-  padding: 2px 6px;
+  font-size: 0.8em;
+  padding: 3px 6px;
   background-color: #9356DC;
   border-radius: 50%;
   color: white;
@@ -363,7 +365,7 @@ nav {
 @media screen and (min-width: 600px) {
   .number {
     position: relative;
-    left: 0;
+    left: -21px;
   }
 }
 
@@ -387,7 +389,7 @@ section {
   }
 }
 
-article {
+.card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -397,7 +399,7 @@ article {
   border-radius: 20px;
   box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.1);
 }
-article:hover {
+.card:hover {
   box-shadow: 10px 10px 10px -3px rgba(0, 0, 0, 0.19);
 }
 
@@ -539,7 +541,7 @@ footer .logo {
   animation-fill-mode: forwards;
 }
 .menu__item__card:hover > .menu__item__check i {
-  transform: rotate(-180deg);
+  transform: rotate(360deg);
 }
 .menu__item__title {
   overflow: hidden;
@@ -577,7 +579,7 @@ footer .logo {
   align-items: center;
   justify-content: center;
   transform-origin: right center;
-  transition: linear 0.4s;
+  transition: linear 0.3s;
 }
 .menu__item__check i {
   height: 1.6rem;
@@ -587,9 +589,9 @@ footer .logo {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  rotate: 180deg;
+  transform: rotate(180deg);
   overflow: hidden;
-  transition: linear 0.4s;
+  transition: linear 0.3s;
 }
 .menu__item .fa-check {
   color: #99E2D0;
