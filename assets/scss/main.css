@@ -626,11 +626,11 @@ section .nav__button a {
 
 @keyframes menuappear {
   from {
-    transform: scale(0);
+    transform: scale(1, 0);
     transform-origin: bottom;
   }
   to {
-    transform: scale(1);
+    transform: scale(1, 1);
   }
 }
 .delay-01 {

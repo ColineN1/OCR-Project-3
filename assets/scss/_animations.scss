@@ -20,11 +20,11 @@
 //Delay animation 
 @keyframes menuappear {
   from {
-    transform: scale(0);
+    transform: scale(1,0);
     transform-origin: bottom;
   }
   to {
-    transform: scale(1);
+    transform: scale(1,1);
   }
 }
 @each $delay,$seconds in $possibility {
